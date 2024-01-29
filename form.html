@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    body{background: url('bg2.jpg');
+         background-size:cover;
+         background-repeat: no-repeat; }
+
+.input:hover{background: red;
+             color:white}         
+.main{border:1px dotted red;
+padding:5px
+width:700px;
+margin-left:100px;
+margin-top:100px;
+margin-right 100px;
+}
+.input-box{margin:5px;
+margin-top:20px;
+padding:10px;
+box-shadow:0px 0px 1px green;
+}
+lable{
+witdth:200px !important;
+color:blue;
+font-size:18px;
+height;30px;
+}
+.input{
+font-size:20px;
+border:none;
+box-shadow:0px 0px 1px red;}
+
+.submit{background:blue;
+color:white;
+font-size:20px;
+border:none;
+
+}
+.reset{background:red;
+color:white;
+font_size:20px;
+border:none;}
+.box , h1 ,p{background: red;
+ border: 1px solid black;
+ border-radius: 0%;
+ width:200px;
+height: 200px;
+margin-top: 100px;
+transition-duration:  100s ;}
+.box:hover,h1:hover,p:hover{background:blue;
+    border-radius: 100%;
+ width: 400px;
+ height: 400px;}
+</style>
+</head>
+<body>
+<div class="main">
+<form method="get" action="register.html">
+<div class="input-box">
+<lable>Name</lable>
+<input type="text" class="input" name="name" placeholder="Input your name" minlength="2"  />
+</div>
+<div class="input-box">
+<lable>Phone number:</lable>
+<input type="number" class="input" name="phone" placeholder="Input your phone number" max="5" min="2"required=""/> 
+</div>
+<div class="input-box">
+<lable>Email:</lable>
+<input type="email" class="input" name="email" placeholder="Enter mail ID" reqiured=""/>
+</div>
+
+<div class="input-box">
+<lable>Address</lable>
+<input type="text" class="input" name="address" placeholder="address"/>
+</div>
+<div class="input-box">
+<lable>City</lable>
+<select  reqiured="" class="input">
+<option value="">select city</option>
+<option value="varanasi">varanasi</option>
+<option value="nodia">nodia</option>
+<option value="mumbai">mumbai</option>
+<option value="lucknow">lucknow</option>
+</select>
+</div>
+<div class="input-box">
+<lable>Gender</lable>
+<input type="radio" name="gender"/>male<br/>
+<input type="radio" name="gender"/>female<br/>
+<input type="radio" name="gender"/>other<br/>
+</div>
+<div class="input-box">
+<lable>age:</lable>
+<input type="number"  class="input" name="age" placeholder="Input your age"/> 
+</div>
+<div class="input-box">
+<lable>DOB:</lable>
+<input type="date" name="date" class="input" />
+
+<button type="submit" class="submit">submit</button>
+
+<button type="reset" class="reset">reset</button>
+</div>
+
+</form>
+</div>
+<div class="box"></div>
+<div class="h1"><h>heading</h></div>
+<div class="p"><p>paragraph</p></div>
+</body>
